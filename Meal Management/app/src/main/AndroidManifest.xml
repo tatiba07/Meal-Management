@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DietManagement"
+        android:hardwareAccelerated="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityCalendar"
+            android:exported="true"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivitySetting"
+            android:exported="true"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityBarcode"
+            android:exported="true"
+            android:label="@string/title_activity_foodDB"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityMeal"
+            android:exported="true"
+            android:label="@string/title_activity_foodDB"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="true"
+            android:label="@string/title_activity_foodDB"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityFoodDB"
+            android:exported="true"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityFoodEdit"
+            android:exported="true"
+            android:label="@string/title_activity_foodEdit"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ActivityMain"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DietManagement.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

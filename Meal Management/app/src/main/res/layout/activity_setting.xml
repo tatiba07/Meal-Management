@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_setting"
+    android:background="@color/background3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_24"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:textColor="@color/normalText"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Display Mode"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/deep"
+        android:background="@color/beta1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/borderline_under">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Display Mode"
+            android:textSize="16dp"
+            android:textColor="@color/normalText"
+            android:gravity="center_vertical"
+            android:paddingStart="30dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/spinner_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background3"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:gravity="end"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/normalText"
+            android:backgroundTint="@color/beta1"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+</LinearLayout>
